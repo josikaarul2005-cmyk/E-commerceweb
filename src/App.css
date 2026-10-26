@@ -1,0 +1,350 @@
+
+.home {
+    padding: 20px;
+    font-family: Arial, sans-serif;
+}
+
+.navbar {
+     display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    box-sizing: border-box;
+    padding: 12px 20px;
+    background-color: white;
+    position: sticky;
+    top: 0;
+    
+}
+
+.navbar h2 {
+    color: royalblue;
+}
+
+.nav-links {
+    display: flex;
+    gap: 20px;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: black;
+}
+
+.nav-links a:hover {
+    color: royalblue;
+}
+
+.hero {
+    text-align: center;
+    padding: 80px 20px;
+    background-color: #f3f6ff;
+}
+
+.hero h1 {
+    font-size: 40px;
+    margin-bottom: 20px;
+}
+
+.hero p {
+    margin-bottom: 25px;
+    color: #666;
+}
+
+.hero button {
+    background-color: royalblue;
+    color: white;
+    padding: 12px 25px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.hero button:hover {
+    background-color: darkblue;
+}
+.shop-button {
+    display: inline-block;
+    background-color: royalblue;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+   
+}
+
+.shop-button:hover {
+    background-color: darkblue;
+}
+
+.products {
+    padding: 50px 10px;
+    text-align: center;
+}
+
+.products h2 {
+    font-size: 30px;
+    margin-bottom: 15px;
+}
+
+.products-description {
+    color:#666;
+    margin-bottom: 30px;
+}
+
+.product-listing {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 25px;
+}
+
+.product-card {
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    padding: 15px;
+    text-align: center;
+}
+
+.product-card img {
+    width: 100%;
+    height: 200px;
+    /* object-fit: cover; */
+    border-radius: 8px;
+}
+
+.product-card h3 {
+    margin: 15px 0 10px;
+}
+
+.product-card p {
+    color: #444;
+    margin-bottom: 15px;
+}
+
+.product-card button {
+    background-color: royalblue;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 5px;
+    /* cursor: pointer; */
+}
+
+.product-card button:hover {
+    background-color: darkblue;
+}
+.buy-now-button{
+     background-color: royalblue;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 5px;
+
+}
+.buy-now-button:hover {
+    background-color: darkblue;
+}
+
+
+.billing-page {
+    min-height: 80vh;
+    padding: 45px 20px;
+    background-color: #f5f7fb;
+}
+
+.checkout-container,
+.invoice {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 35px;
+    background-color: white;
+    border-radius: 14px;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.07);
+}
+
+.checkout-container h1,
+.invoice h2 {
+    margin-bottom: 10px;
+    color: #222;
+    text-align: center;
+}
+
+.checkout-subtitle {
+    margin-bottom: 30px;
+    color: #777;
+    text-align: center;
+}
+
+
+.table-container {
+    width: 100%;
+    overflow-x: auto;
+}
+
+.billing-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 25px 0;
+    background-color: white;
+}
+
+.billing-table th {
+    padding: 16px 12px;
+    background-color: #243b64;
+    color: white;
+    font-weight: 600;
+    text-align: center;
+    white-space: nowrap;
+}
+
+.billing-table td {
+    padding: 16px 12px;
+    border-bottom: 1px solid #e8eaf0;
+    color: #444;
+    text-align: center;
+}
+
+.billing-table tbody tr:nth-child(even) {
+    background-color: #f8faff;
+}
+
+.billing-table tbody tr:hover {
+    background-color: #edf3ff;
+}
+
+.billing-table .product-name {
+    font-weight: 600;
+    text-align: left;
+}
+
+.billing-table tfoot th {
+    padding: 16px 12px;
+    background-color: #edf3ff;
+    color: #243b64;
+}
+
+
+.grand-total {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 15px;
+    margin-top: 25px;
+    padding: 22px;
+    background-color: #f0f5ff;
+    border-radius: 10px;
+}
+
+.grand-total span {
+    font-size: 18px;
+    font-weight: 600;
+    color: #333;
+}
+
+.grand-total h2 {
+    margin: 0;
+    color: #243b64;
+}
+
+
+.billing-page button {
+    padding: 12px 22px;
+    margin: 10px 8px 0 0;
+    border: none;
+    border-radius: 7px;
+    font-size: 15px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+}
+
+.generate-button {
+    display: block;
+    margin: 25px auto 0 !important;
+    background-color: #243b64;
+    color: white;
+}
+
+.generate-button:hover {
+    background-color: #172845;
+}
+
+.billing-page button:not(.generate-button) {
+    background-color: #e8edf5;
+    color: #243b64;
+}
+
+.billing-page button:not(.generate-button):hover {
+    background-color: #d6dfed;
+}
+
+/* Invoice heading */
+.invoice {
+    text-align: center;
+}
+
+.invoice p {
+    margin-bottom: 25px;
+    color: #777;
+}
+
+/* Print only the invoice */
+@media print {
+    body * {
+        visibility: hidden;
+    }
+
+    .invoice,
+    .invoice * {
+        visibility: visible;
+    }
+
+    .invoice {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        max-width: none;
+        padding: 15px;
+        box-shadow: none;
+    }
+
+    .invoice button {
+        display: none;
+    }
+
+    .billing-table th {
+        background-color: #eee !important;
+        color: #111 !important;
+        print-color-adjust: exact;
+        -webkit-print-color-adjust: exact;
+    }
+}
+
+.invoice-subtitle {
+    color: #777;
+    text-align: center;
+    margin-bottom: 25px;
+}
+
+.invoice-actions {
+    display: flex;
+    justify-content: center;
+    gap: 12px;
+    margin-top: 25px;
+    flex-wrap: wrap;
+}
+
+.invoice-actions button:first-child {
+    background-color: #243b64;
+    color: white;
+}
+
+.invoice-actions button:last-child {
+    background-color: #e8edf5;
+    color: #243b64;
+}
+
+.invoice-actions button:hover {
+    opacity: 0.85;
+}
